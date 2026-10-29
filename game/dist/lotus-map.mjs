@@ -1,0 +1,17 @@
+import {GRID,CALLOUTS} from './lotus-layout.mjs';
+export const MAP_SIZE=160;
+export const point=name=>({x:CALLOUTS[name][0],z:CALLOUTS[name][1]});
+export const SITES=['A','B','C'].map(name=>({...nearestFloor({...point(name+' Site'),z:point(name+' Site').z+(name==='A'?5:0)},.8),name,r:5.2}));
+export const SPAWNS=[point('Attacker Side Spawn'),point('Defender Side Spawn')];
+export const ROUTES=[['Attacker Side Spawn','A Lobby','A Root','A Main','A Tree','A Site','A Stairs','Defender Side Spawn'],['Attacker Side Spawn','B Pillars','B Main','B Site','B Upper','Defender Side Spawn'],['Attacker Side Spawn','C Lobby','C Mound','C Main','C Site','C Hall','C Gravel','Defender Side Spawn']].map(names=>names.map(name=>CALLOUTS[name]));
+export const DOORS=[{...point('A Door'),w:1.1,h:5.8,angle:0,name:'A 旋转门',open:true},{...point('C Door'),w:5.6,h:1.1,angle:Math.PI/2,name:'C 旋转门',open:true}];
+export const BREAKABLE={x:105,z:75.8,w:1.3,h:3.8,hp:260,maxHp:260,name:'A–B 可破墙'};
+export function floorAt(x,z){return GRID[Math.floor(z)]?.[Math.floor(x)]==='1';}
+export function floorClear(x,z,r=.5){if(!floorAt(x,z))return false;for(const [dx,dz] of [[r,0],[-r,0],[0,r],[0,-r],[r*.7,r*.7],[-r*.7,r*.7],[r*.7,-r*.7],[-r*.7,-r*.7]])if(!floorAt(x+dx,z+dz))return false;return true;}
+export function nearestFloor(p,r=.5){if(floorClear(p.x,p.z,r))return {...p};for(let s=.5;s<20;s+=.5)for(let i=0;i<32;i++){const a=i/32*Math.PI*2,x=p.x+Math.cos(a)*s,z=p.z+Math.sin(a)*s;if(floorClear(x,z,r))return{x,z};}throw Error('No floor near '+JSON.stringify(p));}
+export function terrainHeight(x,z){return x>116&&z<87&&z>43?1.4:x>65&&x<108&&z>64&&z<87?.6:0;}
+class Heap{constructor(){this.a=[];}push(id,p){const a=this.a;let i=a.length;a.push({id,p});while(i){const j=(i-1)>>1;if(a[j].p<=p)break;a[i]=a[j];i=j;}a[i]={id,p};}pop(){const a=this.a,top=a[0],tail=a.pop();if(a.length){let i=0;while(i*2+1<a.length){let j=i*2+1;if(j+1<a.length&&a[j+1].p<a[j].p)j++;if(a[j].p>=tail.p)break;a[i]=a[j];i=j;}a[i]=tail;}return top.id;}get length(){return this.a.length;}}
+export function findPath(game,a,target){const endPoint=nearestFloor(target,a.r||.5),sx=Math.floor(a.x),sz=Math.floor(a.z),tx=Math.floor(endPoint.x),tz=Math.floor(endPoint.z),start=sz*160+sx,end=tz*160+tx;const cost=new Float32Array(25600);cost.fill(Infinity);const prev=new Int32Array(25600);prev.fill(-1);const closed=new Uint8Array(25600),heap=new Heap();cost[start]=0;heap.push(start,0);let best=start,bestH=1e9;
+ for(let it=0;heap.length&&it<16000;it++){const id=heap.pop();if(closed[id])continue;closed[id]=1;if(id===end){best=id;break;}const x=id%160,z=Math.floor(id/160),h=Math.hypot(x-tx,z-tz);if(h<bestH){best=id;bestH=h;}for(const [dx,dz]of [[1,0],[-1,0],[0,1],[0,-1],[1,1],[1,-1],[-1,1],[-1,-1]]){const xx=x+dx,zz=z+dz,nid=zz*160+xx;if(xx<0||xx>=160||zz<0||zz>=160||closed[nid]||game.blocked(xx+.5,zz+.5,a.r||.5,a.team))continue;if(dx&&dz&&(game.blocked(x+dx+.5,z+.5,a.r||.5,a.team)||game.blocked(x+.5,z+dz+.5,a.r||.5,a.team)))continue;const nc=cost[id]+(dx&&dz?1.414:1);if(nc<cost[nid]){cost[nid]=nc;prev[nid]=id;heap.push(nid,nc+Math.hypot(xx-tx,zz-tz));}}}
+ const out=[];for(let id=best;id!==start&&prev[id]>=0;id=prev[id])out.push({x:id%160+.5,z:Math.floor(id/160)+.5});return out.reverse();}
+export function drawPlan(ctx,w,h){ctx.fillStyle='#34463e';ctx.fillRect(0,0,w,h);ctx.fillStyle='#b6af91';for(let z=0;z<160;z++)for(let x=0;x<160;x++)if(GRID[z][x]==='1')ctx.fillRect(x*w/160,z*h/160,w/160+.1,h/160+.1);}

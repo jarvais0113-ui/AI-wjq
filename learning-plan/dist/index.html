@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="Jarvais Wang 的专属 AI 学习工作台。从今日任务开始，分别管理 AI 学习、通过日语学习韩语，以及大学校内任务。">
+ <meta name="theme-color" content="#ffffff"><title>Jarvais Wang 的学习工作台</title>
+ <link rel="icon" href="./favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ <a class="skip" href="#main">跳到主要内容</a>
+ <aside class="sidebar">
+  <a href="#today" class="brand" aria-label="Jarvais Wang 的学习工作台首页"><span class="brandmark personal-mark">JW</span><span class="brand-name">Jarvais Wang<span class="brand-en">专属学习与成长工作台</span></span></a>
+  <div class="workspace-label">JARVAIS’S PERSONAL SPACE</div>
+  <nav aria-label="主要导航">
+   <a href="#today" data-nav="today"><span class="nav-icon">◉</span>今日任务<span class="nav-dot"></span></a>
+   <a href="#route" data-nav="route"><span class="nav-icon">⌁</span><span id="route-nav-label">学习路线</span><span class="nav-count">24</span></a>
+   <a href="#records" data-nav="records"><span class="nav-icon">▤</span>学习感想</a>
+  </nav>
+  <div class="sidebar-course"><span class="eyebrow">正在学习</span><strong id="subject-title">AI 创作与产品实践</strong><p id="subject-description">游戏、趣味测试、视频和作品集。</p><div class="progress-track"><i id="side-progress"></i></div><span id="side-count" class="small"></span></div>
+  <section class="sidebar-projects" aria-label="我的作品"><span>我的作品</span><a href="https://lotus-moba-lab-jarvais.snowypanda18.chatgpt.site/" target="_blank" rel="noopener">五位荣耀 ↗</a><a href="./creator-plan.html" target="_blank" rel="noopener">学习与运营手册 ↗</a></section>
+  <div class="sidebar-bottom"><button data-action="resources"><span>↗</span> 课程资料</button><button data-action="backup"><span>⇅</span> 数据与备份</button><div class="local-label"><span></span><span id="storage-label">记录保存在当前浏览器</span></div></div>
+ </aside>
+ <div class="app-shell"><header class="topbar"><span>Jarvais 的工作台 <span class="slash">/</span> <strong id="breadcrumb">今日任务</strong></span><span class="header-right"><span id="today-date"></span><button data-action="backup" aria-label="数据与备份" title="数据与备份">⇅</button><span class="avatar" aria-label="Jarvais Wang 的个人学习空间">JW</span></span></header>
+ <div class="track-switch-shell"><nav class="track-switch" aria-label="切换学习板块"><button id="switch-ai" data-track="ai" aria-pressed="true"><span>01</span> AI 学习</button><button id="switch-korean" data-track="korean" aria-pressed="false"><span>02</span> 韩语学习</button><button id="switch-school" data-track="school" aria-pressed="false"><span>03</span> 校内任务</button></nav></div>
+ <main id="main" tabindex="-1"></main><footer class="main-footer"><span>每次迈出一小步，就已经在前进。</span><span>Jarvais Wang · 我的学习与成长空间</span></footer></div>
+ <dialog id="utility-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="关闭弹窗">×</button><div id="dialog-content"></div></dialog>
+ <div id="toast" role="status" aria-live="polite"></div><div id="storage-warning" role="alert" hidden></div>
+ <script type="module" src="./app.mjs"></script>
+</body></html>

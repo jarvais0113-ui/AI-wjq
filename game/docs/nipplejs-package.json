@@ -1,0 +1,10 @@
+{
+  "name": "nipplejs",
+  "version": "0.10.2",
+  "license": "MIT",
+  "repository": {
+    "url": "git+https://github.com/yoannmoinet/nipplejs.git",
+    "type": "git"
+  },
+  "integrity": "sha512-XGxFY8C2DOtobf1fK+MXINTzkkXJLjZDDpfQhOUZf4TSytbc9s4bmA0lB9eKKM8iDivdr9NQkO7DpIQfsST+9g=="
+}

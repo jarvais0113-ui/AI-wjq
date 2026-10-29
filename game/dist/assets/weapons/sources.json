@@ -1,0 +1,156 @@
+{
+  "source": "https://playvalorant.com/en-us/arsenal/",
+  "retrieved": "2026-10-28",
+  "copyright": "Riot Games",
+  "items": [
+    {
+      "id": "bandit",
+      "file": "assets/weapons/bandit.png",
+      "url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/713f006db11bff3a4bb3723d23e0006a1a98ac81-750x274.png?accountingTag=VAL",
+      "category": "SIDEARMS",
+      "bytes": 42262
+    },
+    {
+      "id": "classic",
+      "file": "assets/weapons/classic.png",
+      "url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/bfa273477b5ce6345c00da5a396281bd51830dc8-680x384.png?accountingTag=VAL",
+      "category": "SIDEARMS",
+      "bytes": 57579
+    },
+    {
+      "id": "shorty",
+      "file": "assets/weapons/shorty.png",
+      "url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/25b9844dfade4acdbd05229da3b07b0071e5059a-680x384.png?accountingTag=VAL",
+      "category": "SIDEARMS",
+      "bytes": 69416
+    },
+    {
+      "id": "frenzy",
+      "file": "assets/weapons/frenzy.png",
+      "url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/10c955e82728dbcc4f7edd687be251437b3c8acc-680x384.png?accountingTag=VAL",
+      "category": "SIDEARMS",
+      "bytes": 54023
+    },
+    {
+      "id": "ghost",
+      "file": "assets/weapons/ghost.png",
+      "url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/575558a88acc67dfac8da6c6ab26f4b61589c96f-680x383.png?accountingTag=VAL",
+      "category": "SIDEARMS",
+      "bytes": 80524
+    },
+    {
+      "id": "sheriff",
+      "file": "assets/weapons/sheriff.png",
+      "url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/37efa958bf1dd8ec57a0b1585e741599c7b7bee7-680x383.png?accountingTag=VAL",
+      "category": "SIDEARMS",
+      "bytes": 72756
+    },
+    {
+      "id": "stinger",
+      "file": "assets/weapons/stinger.png",
+      "url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/377c8a9058a364478ed179ccbe41a68dd2255234-680x383.png?accountingTag=VAL",
+      "category": "SMGS",
+      "bytes": 67851
+    },
+    {
+      "id": "spectre",
+      "file": "assets/weapons/spectre.png",
+      "url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/9fad4bf3774e87edf9994a2afada0abdc72c4bed-680x383.png?accountingTag=VAL",
+      "category": "SMGS",
+      "bytes": 71663
+    },
+    {
+      "id": "bucky",
+      "file": "assets/weapons/bucky.png",
+      "url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/982db8ebe5b57b989e009d13b24d9f1bc9c090b5-680x383.png?accountingTag=VAL",
+      "category": "SHOTGUNS",
+      "bytes": 59663
+    },
+    {
+      "id": "judge",
+      "file": "assets/weapons/judge.png",
+      "url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/7190d2e85b82bd1de81eba87a1db2b469259289d-680x383.png?accountingTag=VAL",
+      "category": "SHOTGUNS",
+      "bytes": 88869
+    },
+    {
+      "id": "bulldog",
+      "file": "assets/weapons/bulldog.png",
+      "url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/7bbdf3063c94fa06fbde33c35ce09fd5202fc153-680x383.png?accountingTag=VAL",
+      "category": "RIFLES",
+      "bytes": 96578
+    },
+    {
+      "id": "guardian",
+      "file": "assets/weapons/guardian.png",
+      "url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/64917f04177ef9666f58149f0a98a41fa7bf96ba-680x383.png?accountingTag=VAL",
+      "category": "RIFLES",
+      "bytes": 62887
+    },
+    {
+      "id": "phantom",
+      "file": "assets/weapons/phantom.png",
+      "url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/f0636340d8a60e1488a447e66784921d01f90d18-680x383.png?accountingTag=VAL",
+      "category": "RIFLES",
+      "bytes": 67604
+    },
+    {
+      "id": "vandal",
+      "file": "assets/weapons/vandal.png",
+      "url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/fc32a60b112201776c490a5a6a7f2381cd232bd5-680x383.png?accountingTag=VAL",
+      "category": "RIFLES",
+      "bytes": 78621
+    },
+    {
+      "id": "marshal",
+      "file": "assets/weapons/marshal.png",
+      "url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/248441a78c76ee615ad1ece97db1c0203cebc5b1-680x383.png?accountingTag=VAL",
+      "category": "SNIPERS",
+      "bytes": 44421
+    },
+    {
+      "id": "operator",
+      "file": "assets/weapons/operator.png",
+      "url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/606f29a17f5bc6f13264f2df21a29d4e209c9dce-680x383.png?accountingTag=VAL",
+      "category": "SNIPERS",
+      "bytes": 51733
+    },
+    {
+      "id": "ares",
+      "file": "assets/weapons/ares.png",
+      "url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/4f1969789f8f0da0863d15a6a23957b4508753f2-680x383.png?accountingTag=VAL",
+      "category": "HEAVIES",
+      "bytes": 63217
+    },
+    {
+      "id": "odin",
+      "file": "assets/weapons/odin.png",
+      "url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/d7e242b2e704155c71841325629ad1a4673c436f-680x383.png?accountingTag=VAL",
+      "category": "HEAVIES",
+      "bytes": 75654
+    },
+    {
+      "id": "tactical-knife",
+      "file": "assets/weapons/tactical-knife.png",
+      "url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/48649a9bbc3bc0afce42f498991ea081958992a2-680x383.png?accountingTag=VAL",
+      "category": "MELEE",
+      "bytes": 84084
+    },
+    {
+      "id": "outlaw",
+      "file": "assets/weapons/outlaw.png",
+      "url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/1b1e480a139ae8d1892f8d7fd163391ce123ee38-680x383.png?accountingTag=VAL",
+      "category": "SNIPERS",
+      "bytes": 48285
+    },
+    {
+      "id": "warden",
+      "file": "assets/weapons/warden.png",
+      "url": "https://media.valorant-api.com/weaponskinchromas/44b01f26-4569-0161-681f-e2a677f317ff/fullrender.png",
+      "category": "RIFLES",
+      "bytes": 31863,
+      "note": "Riot game art via community VALORANT-API mirror; not hosted on Riot arsenal page",
+      "officialAnnouncement": "https://playvalorant.com/en-gb/news/game-updates/valorant-patch-notes-13-06/"
+    }
+  ]
+}

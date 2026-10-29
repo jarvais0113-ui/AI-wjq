@@ -1,0 +1,591 @@
+{
+  "date": "2026-10-29",
+  "projects": [
+    "game",
+    "learning-plan"
+  ],
+  "file_count": 116,
+  "total_bytes": 8022344,
+  "files": [
+    {
+      "path": ".gitignore",
+      "size": 64,
+      "sha": "bec45324f5d5e8bd21f18fb4fc43bc4fef354dd8"
+    },
+    {
+      "path": "game/.gitignore",
+      "size": 34,
+      "sha": "68864d5164581591062057fcffdae37d81ee5b08"
+    },
+    {
+      "path": "game/ONLINE-ADDRESS.md",
+      "size": 185,
+      "sha": "c4d910f32ddb9c9770cbf1a8171b5fe4cd8affd0"
+    },
+    {
+      "path": "game/README.md",
+      "size": 13592,
+      "sha": "ec98821b1e6fd76a92d929a9ab8192a0ab520fcf"
+    },
+    {
+      "path": "game/dist/apple-touch-icon.png",
+      "size": 1341,
+      "sha": "a9cd7d29452104a7358a637cc6efd68755b65857"
+    },
+    {
+      "path": "game/dist/assets/weapons/ares.png",
+      "size": 63217,
+      "sha": "77e6e6a9dfb9927485b746e051220b8686e9ed92"
+    },
+    {
+      "path": "game/dist/assets/weapons/bandit.png",
+      "size": 42262,
+      "sha": "a738351a7326414d5883d04f2084a1a504c213c2"
+    },
+    {
+      "path": "game/dist/assets/weapons/bucky.png",
+      "size": 59663,
+      "sha": "d4fa6044f7c788e2a1fd10cb0a06b3ecb284b0a1"
+    },
+    {
+      "path": "game/dist/assets/weapons/bulldog.png",
+      "size": 96578,
+      "sha": "5d57d4f80d82a0e69efd3eca070038fdf177316c"
+    },
+    {
+      "path": "game/dist/assets/weapons/classic.png",
+      "size": 57579,
+      "sha": "04bcb4552f40b948fec8a0a33b3508c782ba23bc"
+    },
+    {
+      "path": "game/dist/assets/weapons/frenzy.png",
+      "size": 54023,
+      "sha": "fc36b7f21bf7e2c2b7ba8a7a7437e7bfa8780a42"
+    },
+    {
+      "path": "game/dist/assets/weapons/ghost.png",
+      "size": 80524,
+      "sha": "a4a130f367b31738af53281bc8c899db9b7b1573"
+    },
+    {
+      "path": "game/dist/assets/weapons/guardian.png",
+      "size": 62887,
+      "sha": "3df167e1fea4c9ecba9fc3d55b82e4cf99c6c9f2"
+    },
+    {
+      "path": "game/dist/assets/weapons/judge.png",
+      "size": 88869,
+      "sha": "bf6afdd24f4bef9e5d3b981d75a64370a49e022a"
+    },
+    {
+      "path": "game/dist/assets/weapons/marshal.png",
+      "size": 44421,
+      "sha": "d66ea32f0af41fda17730b82717f679ef1a9a573"
+    },
+    {
+      "path": "game/dist/assets/weapons/odin.png",
+      "size": 75654,
+      "sha": "f18f47191cf07e66f7c8938461b74f97b93182bc"
+    },
+    {
+      "path": "game/dist/assets/weapons/operator.png",
+      "size": 51733,
+      "sha": "62557425d5f40dd72fb287cbd0243683844f79a5"
+    },
+    {
+      "path": "game/dist/assets/weapons/outlaw.png",
+      "size": 48285,
+      "sha": "0f210176ca163fa6fc4696785f4648a1451b1db0"
+    },
+    {
+      "path": "game/dist/assets/weapons/phantom.png",
+      "size": 67604,
+      "sha": "a0c44c9469927fca6a58b2d16c893b9711a340be"
+    },
+    {
+      "path": "game/dist/assets/weapons/sheriff.png",
+      "size": 72756,
+      "sha": "a4ab8ae05acd85122ade8da1d133232ccc5c2755"
+    },
+    {
+      "path": "game/dist/assets/weapons/shorty.png",
+      "size": 69416,
+      "sha": "fecb06a1c62c705c9ef0a508dbfb733ed6f2d078"
+    },
+    {
+      "path": "game/dist/assets/weapons/sources.json",
+      "size": 6009,
+      "sha": "b3b8d7085ba9ee2784434b61242a070fcbb6825d"
+    },
+    {
+      "path": "game/dist/assets/weapons/spectre.png",
+      "size": 71663,
+      "sha": "62439c4dbee2aa79c467fb5fa1cea7900bd23949"
+    },
+    {
+      "path": "game/dist/assets/weapons/stinger.png",
+      "size": 67851,
+      "sha": "ed41ea27108a3a287f7827be53cc10748d78dd6b"
+    },
+    {
+      "path": "game/dist/assets/weapons/tactical-knife.png",
+      "size": 84084,
+      "sha": "c47d260dc349b4dd707cede173f7706c0f8ab5c3"
+    },
+    {
+      "path": "game/dist/assets/weapons/vandal.png",
+      "size": 78621,
+      "sha": "c057ce95c8fb7dcf0cd93df22748b560e54c2fde"
+    },
+    {
+      "path": "game/dist/assets/weapons/warden.png",
+      "size": 31863,
+      "sha": "0924bc72809f98ac0b1eb7ecee439928e02871ed"
+    },
+    {
+      "path": "game/dist/audio/CC0-LICENSE.txt",
+      "size": 7048,
+      "sha": "0e259d42c996742e9e3cba14c677129b2c1b6311"
+    },
+    {
+      "path": "game/dist/audio/attack.ogg",
+      "size": 15532,
+      "sha": "86338431259517417132d9b1aaa28eb9a9f36d95"
+    },
+    {
+      "path": "game/dist/audio/break.ogg",
+      "size": 31619,
+      "sha": "1c5143d308d587fdbb2fca4395d143f465d829a2"
+    },
+    {
+      "path": "game/dist/audio/gate.ogg",
+      "size": 22848,
+      "sha": "7df28265312494fc053380002e551b001dea89ad"
+    },
+    {
+      "path": "game/dist/audio/hit.ogg",
+      "size": 9370,
+      "sha": "a9d991f2c9d652e25f0b07244267a036204a909f"
+    },
+    {
+      "path": "game/dist/audio/zip.ogg",
+      "size": 16508,
+      "sha": "b76853a893383a0facfb230a368404d136eff1a3"
+    },
+    {
+      "path": "game/dist/audio.mjs",
+      "size": 3681,
+      "sha": "443ee8ab0a608aa48b7976d4932033d24b91aacb"
+    },
+    {
+      "path": "game/dist/clutch.mjs",
+      "size": 5651,
+      "sha": "da0c65fb3ce9fd6f5df10800d9cea01d6c1fa4e2"
+    },
+    {
+      "path": "game/dist/controls.mjs",
+      "size": 3486,
+      "sha": "d393adf53c53c3d3cb2e8fbc6bb821b80f1ad014"
+    },
+    {
+      "path": "game/dist/display.mjs",
+      "size": 576,
+      "sha": "5a245a3f881c92545ccacd45eddcd3242623e959"
+    },
+    {
+      "path": "game/dist/engine.mjs",
+      "size": 28963,
+      "sha": "9e988cf5df211ddd5972431e51956bfbee29a141"
+    },
+    {
+      "path": "game/dist/experience.mjs",
+      "size": 3504,
+      "sha": "32ef7e5dc5f33e846448050bcf1d30a18b76c02d"
+    },
+    {
+      "path": "game/dist/guide.html",
+      "size": 91579,
+      "sha": "4358835f12a3d3b30ec9272cedd400279b4077d7"
+    },
+    {
+      "path": "game/dist/icon.svg",
+      "size": 313,
+      "sha": "1b631d6d0c73d5c1b309dca8493d3870ec2971f0"
+    },
+    {
+      "path": "game/dist/index.html",
+      "size": 7775,
+      "sha": "34fece9e60a2ef96bca80e46c2ba6bd2022b87e7"
+    },
+    {
+      "path": "game/dist/joystick.mjs",
+      "size": 2415,
+      "sha": "b71e9080ff2645da1f88960926dc66b195df5afe"
+    },
+    {
+      "path": "game/dist/lotus-game.mjs",
+      "size": 4875,
+      "sha": "e46903b87d12dbac51f6ac372157a77070fafd1f"
+    },
+    {
+      "path": "game/dist/lotus-layout.mjs",
+      "size": 27147,
+      "sha": "fb98ff244dfff95c507f822771692283aa6e9592"
+    },
+    {
+      "path": "game/dist/lotus-map.mjs",
+      "size": 3486,
+      "sha": "0bd473e0206dd5cdb67e0c5aabe4579c6ff30529"
+    },
+    {
+      "path": "game/dist/lotus-scene.mjs",
+      "size": 6278,
+      "sha": "52ce5dc34da942466a113c550e213cc1d9d6eace"
+    },
+    {
+      "path": "game/dist/main.mjs",
+      "size": 38686,
+      "sha": "0e93881ae5203cd5fb043bd22a6230f3d75fe635"
+    },
+    {
+      "path": "game/dist/manifest.webmanifest",
+      "size": 282,
+      "sha": "92b4f1c8562e223ba2fd7c93d6ea733604ebbd87"
+    },
+    {
+      "path": "game/dist/polish.css",
+      "size": 7686,
+      "sha": "05a9b2d4d3be8b7c6f210922d15644c12ff1d9c9"
+    },
+    {
+      "path": "game/dist/renderer.mjs",
+      "size": 24818,
+      "sha": "b74592b7eebb59d78b508f6d73121480b5a224e4"
+    },
+    {
+      "path": "game/dist/spike.mjs",
+      "size": 21480,
+      "sha": "9b5af13fef562b6b2b7d668a5ee0d3502b004195"
+    },
+    {
+      "path": "game/dist/style.css",
+      "size": 40343,
+      "sha": "988d8416949e3f696928349eaa8ddf76edfd3235"
+    },
+    {
+      "path": "game/dist/sw.js",
+      "size": 1912,
+      "sha": "5066fc3113cf1fcf93bee9ed76a2ba96f5cb82c0"
+    },
+    {
+      "path": "game/dist/tactics.mjs",
+      "size": 2387,
+      "sha": "3f474e7d4dea5fc7f7ced6e4784324d1eed966b7"
+    },
+    {
+      "path": "game/dist/vendor/nipplejs-LICENSE.txt",
+      "size": 1105,
+      "sha": "6ad8999b7b761b1b74437ed585807b705d014b77"
+    },
+    {
+      "path": "game/dist/vendor/nipplejs.js",
+      "size": 20258,
+      "sha": "2c31fb6233d54e3d8783db05c2a7fd3cf4850701"
+    },
+    {
+      "path": "game/dist/vendor/three-LICENSE.txt",
+      "size": 1081,
+      "sha": "cf781430404b0ae0ba7d8dea3457a3515dd7c9b9"
+    },
+    {
+      "path": "game/dist/vendor/three.core.min.js",
+      "size": 381124,
+      "sha": "70c40977daa0f6e1e312c6b58e9bfe49cb5a87a4"
+    },
+    {
+      "path": "game/dist/vendor/three.module.min.js",
+      "size": 338908,
+      "sha": "20d3c112761a519c7780a5ccc9f72a40937fa83b"
+    },
+    {
+      "path": "game/dist/vfx.mjs",
+      "size": 8855,
+      "sha": "8e77a069aee70c4257bf32d4c49535f9c8000f4f"
+    },
+    {
+      "path": "game/dist/weapons.mjs",
+      "size": 10048,
+      "sha": "d56b60c29a51c7d474ee8456f42633a6888ed366"
+    },
+    {
+      "path": "game/docs/2.1-战术与美术更新.md",
+      "size": 4164,
+      "sha": "5af85e066e41b67e07e4e37cb588103ab9c65d78"
+    },
+    {
+      "path": "game/docs/2.2-古城行动更新.md",
+      "size": 2171,
+      "sha": "d21898a35269bafdac6dd0333e4c7fcb7dc6e872"
+    },
+    {
+      "path": "game/docs/2.3-一分钟残局.md",
+      "size": 3425,
+      "sha": "db258331f7baa8509a170f0b3fe25dda5d282bd0"
+    },
+    {
+      "path": "game/docs/nipplejs-package.json",
+      "size": 284,
+      "sha": "b850e67bc2294df602c83abcf5d5edee40eb6444"
+    },
+    {
+      "path": "game/docs/references/lotus-metadata.json",
+      "size": 8676,
+      "sha": "7d8bf25604fb03b7145cca2651c73a44feb89b33"
+    },
+    {
+      "path": "game/docs/references/lotus-minimap-reference.png",
+      "size": 31156,
+      "sha": "4ec202378305210404cc2d9b4fdbd84d01fa8d73"
+    },
+    {
+      "path": "game/docs/references/previous-weapons.json",
+      "size": 7764,
+      "sha": "16068097be6ecab2005cb56a1e5e573097bbe84a"
+    },
+    {
+      "path": "game/docs/references/weapons-api.json",
+      "size": 3739836,
+      "sha": "1724f8a3cfee9bfe1f306572597d4ac3a4348df8"
+    },
+    {
+      "path": "game/docs/three-package.json",
+      "size": 299,
+      "sha": "6d4c9ee1accbb488208bc7394f70ad58c582d05c"
+    },
+    {
+      "path": "game/docs/资源与许可证.md",
+      "size": 5650,
+      "sha": "94d6d94fb8ec3d937b037d15c79813829e56da76"
+    },
+    {
+      "path": "game/docs/验证记录.md",
+      "size": 3418,
+      "sha": "a5d64d3608f13f353a3b81773448998c98403928"
+    },
+    {
+      "path": "game/outputs/public-incognito-verified.png",
+      "size": 290159,
+      "sha": "875ad6b85dfea7a18b665d94d9cc8e31e5fcbc8b"
+    },
+    {
+      "path": "game/outputs/tests-v2.3.1.txt",
+      "size": 5589,
+      "sha": "3456624cad89c41c9f511aad3c22b291a567c441"
+    },
+    {
+      "path": "game/outputs/v2.3.1-hud.png",
+      "size": 103045,
+      "sha": "cd065a610bbdeb161f9f2724165295568ce42f15"
+    },
+    {
+      "path": "game/progress.md",
+      "size": 4722,
+      "sha": "018d388830174c73b439b59ab7b4eb7be52f5f54"
+    },
+    {
+      "path": "game/scripts/build-lotus-layout.py",
+      "size": 2055,
+      "sha": "06a6359e7fbab4858816ab12533f417d23a66933"
+    },
+    {
+      "path": "game/tests/art.test.mjs",
+      "size": 1467,
+      "sha": "ab3ad6083eb0d18d61b1084bcf3e45fcc428339c"
+    },
+    {
+      "path": "game/tests/clutch.test.mjs",
+      "size": 3506,
+      "sha": "28c4650058ab8d0243c0978e3af57759da010395"
+    },
+    {
+      "path": "game/tests/combat.test.mjs",
+      "size": 4062,
+      "sha": "11d19c4e1d9cc02004c729147a9f9f71331d555e"
+    },
+    {
+      "path": "game/tests/controls.test.mjs",
+      "size": 3280,
+      "sha": "a9796521347b9f9c22978eb5ae6038c325c41d69"
+    },
+    {
+      "path": "game/tests/experience.test.mjs",
+      "size": 3549,
+      "sha": "826dac79be705c146fb43f99b7d1e84c8e3bdea6"
+    },
+    {
+      "path": "game/tests/game.test.mjs",
+      "size": 6341,
+      "sha": "701b21de508707c68a2a7b5fa2ad61ffae13a7c4"
+    },
+    {
+      "path": "game/tests/polish.test.mjs",
+      "size": 2001,
+      "sha": "9784236fc1ff9c7d7752cacc505813373d6876d9"
+    },
+    {
+      "path": "game/tests/spike.test.mjs",
+      "size": 3832,
+      "sha": "2e9d4022a1f03ef1cd84964efe7393f508969a11"
+    },
+    {
+      "path": "game/tests/tactics.test.mjs",
+      "size": 4172,
+      "sha": "0f42e600cbe27a8728a8b280296ef8badb74a882"
+    },
+    {
+      "path": "learning-plan/README.md",
+      "size": 5219,
+      "sha": "14c283fa223d6c0a0f8c5b3b17d2365e5288875e"
+    },
+    {
+      "path": "learning-plan/dist/app.mjs",
+      "size": 33709,
+      "sha": "44402f11d567c289f02ffa04ea4819fd1ca1a46d"
+    },
+    {
+      "path": "learning-plan/dist/creator-plan.html",
+      "size": 34403,
+      "sha": "f85cc749da10fa7ccbeb93f1905b6c72bac2d842"
+    },
+    {
+      "path": "learning-plan/dist/creator-ui.mjs",
+      "size": 4494,
+      "sha": "5dc5fcfa2dec826436037fb0c496faa533c1c78e"
+    },
+    {
+      "path": "learning-plan/dist/curriculum-ai-legacy.mjs",
+      "size": 17170,
+      "sha": "51c7853acb5cc9249f43938f54345fa71b5ed8ad"
+    },
+    {
+      "path": "learning-plan/dist/curriculum-korean-legacy.mjs",
+      "size": 67617,
+      "sha": "22966b550d66f41a3eecc9ff41e492b323bd93ea"
+    },
+    {
+      "path": "learning-plan/dist/curriculum-korean.mjs",
+      "size": 27488,
+      "sha": "8021362481e2228a39e2d7f6c96196bf7637657a"
+    },
+    {
+      "path": "learning-plan/dist/curriculum.mjs",
+      "size": 19783,
+      "sha": "8b1dbda28b5a775f29ce71628e80ce74f9dc03b8"
+    },
+    {
+      "path": "learning-plan/dist/design-preview.html",
+      "size": 23712,
+      "sha": "e9a846d3a6a6790c302d36056fafebc5004b2d64"
+    },
+    {
+      "path": "learning-plan/dist/favicon.svg",
+      "size": 247,
+      "sha": "2c533927d68616757a7fbe70cb7ecc9b09bdc6a8"
+    },
+    {
+      "path": "learning-plan/dist/index.html",
+      "size": 3576,
+      "sha": "f3f385bb372ea2576b2e8a3e2f55824993d2940e"
+    },
+    {
+      "path": "learning-plan/dist/korean-training.mjs",
+      "size": 2117,
+      "sha": "a967006b8c5db152f4f9fee164f9890d33ddc502"
+    },
+    {
+      "path": "learning-plan/dist/korean-ui.mjs",
+      "size": 15698,
+      "sha": "c2645bbd3b081cbd141183f30210d5718db6ad74"
+    },
+    {
+      "path": "learning-plan/dist/resources/Codex_AI商业与金融_8周学习计划表.pdf",
+      "size": 298208,
+      "sha": "04f092dac5dc1f20fe30753d824f825fc0db01b1"
+    },
+    {
+      "path": "learning-plan/dist/resources/Codex_AI商业与金融_实践小教学.pdf",
+      "size": 406431,
+      "sha": "60f7d1b54aac28dc0839290ea3fb74a0876a55ae"
+    },
+    {
+      "path": "learning-plan/dist/resources/Codex_第01课_学习工作台需求清单.pdf",
+      "size": 142978,
+      "sha": "1775a6167e37bd41851212e13e7cdd791da2e3be"
+    },
+    {
+      "path": "learning-plan/dist/resources/韩语学习计划.md",
+      "size": 4425,
+      "sha": "0e7b4700b4808c50f6b6dc35eb44d4bc142734ce"
+    },
+    {
+      "path": "learning-plan/dist/school.mjs",
+      "size": 8492,
+      "sha": "2ea2d3dde7431a1ab1fa979aa00e992d94955b16"
+    },
+    {
+      "path": "learning-plan/dist/state.mjs",
+      "size": 7237,
+      "sha": "327a1251c683babaa6cf55e93bb7f9712686bcdd"
+    },
+    {
+      "path": "learning-plan/dist/style.css",
+      "size": 50426,
+      "sha": "0971062fa04555c381e4833eeceff7da3f8ef3d5"
+    },
+    {
+      "path": "learning-plan/docs/implementation-plan.md",
+      "size": 2460,
+      "sha": "0cf71e252b82b80a3cbabed2603e9ed4d7b716ec"
+    },
+    {
+      "path": "learning-plan/docs/superpowers/plans/2026-10-28-tomi-first10.md",
+      "size": 3052,
+      "sha": "e53a488dd6d3e75f4123f2792019ac3ab51b8683"
+    },
+    {
+      "path": "learning-plan/docs/tracks-plan.md",
+      "size": 1898,
+      "sha": "5ecb71649ce03812f6bcde9f9b10d556ab5ceb0e"
+    },
+    {
+      "path": "learning-plan/docs/小红书AI虚拟产品案例.md",
+      "size": 1095,
+      "sha": "e51fdceadf21d1378986ac9f6bb9694ce763fe9e"
+    },
+    {
+      "path": "learning-plan/tests/creator-plan.test.mjs",
+      "size": 2987,
+      "sha": "aaf25fb5e700eee93736e4ae45122a00559b6eb0"
+    },
+    {
+      "path": "learning-plan/tests/korean-content.test.mjs",
+      "size": 3155,
+      "sha": "3e68b43d8320f094955adb8fb11bd49b66434ada"
+    },
+    {
+      "path": "learning-plan/tests/korean-training.test.mjs",
+      "size": 3006,
+      "sha": "fd4b9486054af94e657cdfa03b7075665fda292b"
+    },
+    {
+      "path": "learning-plan/tests/state.test.mjs",
+      "size": 1427,
+      "sha": "23c85fc8bd815743419ebf4f4a9dbc43394f31e0"
+    },
+    {
+      "path": "learning-plan/tests/workspace.test.mjs",
+      "size": 2806,
+      "sha": "23197d3dab846eb63febd1aca315d9e72e252a6d"
+    }
+  ]
+}

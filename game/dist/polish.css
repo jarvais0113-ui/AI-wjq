@@ -1,0 +1,41 @@
+/* 2.3.1: slate glass, warm stone, compact combat HUD. */
+:root{--jade:#dfc7a3;--cream:#f3eee6;--ink:#24272e;--gold:#d4ad7c;--muted:#b9b7b0}
+html,body{position:fixed;inset:0;width:100%;height:100%;min-height:100%;background:#292a2e}
+#world,#labels{position:fixed;inset:0 0 auto;width:100%;height:max(100%,var(--scene-height,100dvh))!important}
+.screen,#modal,#rotate,#loading{position:fixed;top:var(--hud-top,0px);bottom:auto;height:var(--hud-height,100dvh);width:100%}
+.vignette{position:fixed;inset:0;background:radial-gradient(ellipse,transparent 60%,#1c202026 100%)}
+#lobby{background:linear-gradient(90deg,#20242bdb,transparent 50%,#20242b60)}
+.deploy,.modal-card{border:1px solid #dbd2bf33;border-radius:20px;background:linear-gradient(145deg,#30353cf2,#20242cf2);box-shadow:0 18px 55px #080d194d;backdrop-filter:blur(18px)}
+#modal{background:#1013198c;backdrop-filter:blur(5px)}
+.primary{border-radius:12px;letter-spacing:1px;background:linear-gradient(135deg,#e2ceb0,#bc9a70);color:#302c26;box-shadow:0 4px 14px #0002}
+.hero-option,#modePicker button,.difficulty button,.device-options button,.armor-row button,.loadout-presets button,.gun-card,.clutch-loadout button,.augment-grid button,.modal-buttons button{border-radius:10px}
+.clutch-loadout button,.augment-grid button,.device-options button{background:#232a32;border-color:#d4c7b52b}.clutch-loadout .selected,.device-options .selected,#modePicker .selected,.difficulty button.selected{background:#63594b;border-color:#d2b58b;color:#fff0d5}
+.buy-header,.buy-footer{background:#282e36}.gun-card{background:#252a32}.gun-card.selected{background:#4a463f}
+.clutch-facts span{border-radius:20px;border-color:#c5b69e33;color:#c7c4bc}.clutch-brief h2{font-family:system-ui;font-size:23px;font-weight:600;letter-spacing:1px}.modal-card p,.modal-card label,.modal-card h3{color:#d0cec9}
+#hud .scoreboard{top:max(8px,env(safe-area-inset-top));gap:14px;padding:5px 14px;height:40px;border:1px solid #f6ead522;border-radius:22px;background:#242a32b8;box-shadow:0 3px 14px #13182020;backdrop-filter:blur(8px)}
+#hud .scoreboard>div{min-width:70px}#hud .scoreboard strong{font-size:15px;letter-spacing:1.5px}#hud .scoreboard small{font-size:7px;color:#d0c9bb;margin-top:1px;letter-spacing:0}#hud .team{gap:7px;font-size:8px}#hud .team b{font-size:18px}.blue{color:#a5d8e7}.red{color:#e8a08e}
+#hud .map-wrap{width:104px;padding:4px;border:1px solid #e7dece33;border-radius:12px;background:#242a32a6;box-shadow:0 3px 14px #1113;overflow:hidden}#hud .map-wrap canvas{border-radius:8px;opacity:.85}#hud .map-wrap>span{font-size:6px;letter-spacing:1px}
+#hud .top-actions{top:9px;gap:5px}#hud .top-actions button{width:29px;height:29px;border-radius:10px;border:1px solid #e7dece26;background:#282d35a6;backdrop-filter:blur(6px);color:#e6ded0}
+#hud #objective{top:54px;max-width:55vw;font-size:9px;letter-spacing:0;background:#242a3280;border:0;border-radius:12px;padding:4px 10px;color:#e1d7c6;overflow:hidden;text-overflow:ellipsis}
+#hud #navigationPanel{top:81px;border:0;border-radius:12px;background:#242a3266;padding:3px 7px;font-size:8px}#navToggle{border:0;border-radius:8px;font-size:8px;padding:3px 5px}#hud #navStatus{font-size:8px}
+#hud #announcement,.scored-kill #hud #announcement{top:51px;left:auto;right:12px;transform:none;max-width:220px;white-space:normal;text-align:right;font:500 11px/1.6 system-ui;letter-spacing:0;padding:5px 9px;border-radius:10px;background:#242a3277;color:#f4d5a8;text-shadow:0 1px 3px #1116;pointer-events:none}
+#hud #killFeed{top:88px;right:12px;width:180px;font-size:9px}#hud #killFeed>div{border:0;border-radius:8px;background:linear-gradient(90deg,transparent,#242a3288);padding:4px 7px}
+#hud #skillHint{top:122px;bottom:auto;right:12px;max-width:200px;border:0;border-radius:10px;background:#242a3288;padding:5px 8px;font-size:9px;line-height:1.5;color:#ded6c9;pointer-events:none}
+#hud #heroStatus{bottom:max(12px,env(safe-area-inset-bottom));min-width:0;padding:7px 10px;gap:7px;border-radius:14px;border:1px solid #e5dac51f;background:#242a329c;box-shadow:0 3px 14px #15182020;backdrop-filter:blur(7px)}#hud #heroStatus>.portrait{width:25px;height:30px}#hud .hero-resources{width:150px}#hud .hero-line b{font-size:10px;letter-spacing:0}.health,.mana{border-radius:5px;background:#10192399}.health>i{background:linear-gradient(90deg,#60b9bd,#b0dcc9)}.health>span{color:#183437}.mana i{background:#9bb5d5}#buffs span{background:none;padding:0;font-size:7px;color:#d6cebf}#hud #buffs{height:auto;min-height:9px}
+#hud .ability,#hud .small-actions button,#hud #aimToggle{background:radial-gradient(circle at 35% 20%,#555f6aab,#242b36a6);border:1px solid #e2ddd25c;box-shadow:inset 0 1px 4px #fff1,0 3px 9px #1112;backdrop-filter:blur(3px);color:#e1e4e6}
+#hud .ability.ultimate{background:radial-gradient(circle at 35% 20%,#97836aa8,#48413bad);border-color:#d2b78c99;color:#f5dfb8}#hud .ability small{background:#ccc3b4d9;color:#343b43}#hud .ability b{color:#eee6d7;letter-spacing:0;font-size:8px}#hud .cooldown{background:#202631b8;color:#eadbc5}
+#hud #attack{background:radial-gradient(circle at 35% 20%,#c8ae85c9,#75634cc7);border:1.5px solid #e6ceb299;box-shadow:0 0 0 4px #e3d1b30c,0 3px 14px #12192333;backdrop-filter:blur(3px)}#hud #attack.firing{background:#c6aa7bd9;box-shadow:0 0 15px #e6c08c55}
+#hud #deviceUse{border-radius:12px;background:#282e3699;border:1px solid #e1c9a13d;padding:6px 10px;font-size:9px;color:#e2cfaf}#hud #passSpike{border-radius:10px;background:#282e3699}
+#hud #joystick{background:radial-gradient(circle,transparent 42%,#222d3815 43%);border-color:#eee4d422}.stick-base{border-color:#ded4c660;background:#bec3c614}.stick-thumb{border-color:#ede8d0a6;background:#d6d1c368;box-shadow:0 3px 9px #1113}.joystick-guide{color:#dfd7c75c}
+#hud #commandPanel{border-radius:12px;background:#252c3499;border-color:#e4d2b12b}#commandPanel button{border-radius:7px}#hud #focusGame{border:0;border-radius:8px;background:#252c3477;font-size:7px}.clutch-mode #focusGame{display:none}
+@media(max-height:500px){
+ #hud .scoreboard{height:32px;padding:3px 11px;gap:10px;top:6px}#hud .scoreboard strong{font-size:12px}#hud .scoreboard small{font-size:6px}#hud .team{font-size:7px;gap:5px}#hud .team b{font-size:15px}#hud .scoreboard>div{min-width:60px}
+ #hud .map-wrap{top:6px;left:max(8px,env(safe-area-inset-left));width:82px;padding:3px;border-radius:10px}#hud .map-wrap>span{padding-top:2px;font-size:5px}#hud .map-wrap b{font-size:5px}
+ #hud #objective{top:41px;max-width:52vw;font-size:8px;padding:3px 8px}#hud #navigationPanel{top:63px;padding:2px 5px}#hud #navStatus{max-width:145px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+ #hud #announcement,.scored-kill #hud #announcement{top:44px;right:10px;max-width:150px;font-size:9px;padding:4px 6px}#hud #killFeed{top:78px;width:140px;font-size:8px}#hud #skillHint{top:102px;max-width:150px;font-size:8px}
+ #hud #heroStatus{bottom:max(8px,env(safe-area-inset-bottom));padding:5px 8px;border-radius:11px}#hud #heroStatus>.portrait{display:none}#hud .hero-resources{width:145px}#hud .hero-line{margin-bottom:3px}#hud .health{height:7px}#hud .health>span{line-height:7px;font-size:6px}#hud .mana{height:2px}#hud #buffs{margin-top:3px}
+ #hud .top-actions button{width:25px;height:25px;border-radius:8px}#hud .top-actions svg{width:14px;height:14px}#hud #abilities{transform:scale(.74)}#hud #deviceUse{font-size:8px;padding:5px 8px}
+ .deploy{border-radius:14px}.modal-card{border-radius:16px}.clutch-brief h2{font-size:19px}
+}
+
+@media(max-width:700px) and (orientation:landscape){#hud .hero-resources{width:118px}#hud #abilities{transform:scale(.68)}#hud .hero-line span{font-size:7px}#hud #buffs span{font-size:6px}}
